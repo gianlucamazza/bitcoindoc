@@ -13,7 +13,11 @@ cd tor
 sh autogen.sh
 ./configure
 make
-(optional: install globally) sudo make install
+```
+
+(optional: install Tor globally)
+```
+sudo make install
 ```
 
 ## Configure and run Tor
