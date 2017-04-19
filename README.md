@@ -1,0 +1,2 @@
+# bitcoindoc
+Documentation for Bitcoin
