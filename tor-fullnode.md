@@ -4,7 +4,7 @@
 
 ### Get sources
 ```
-https://github.com/torproject/tor.git
+git clone https://github.com/torproject/tor.git
 ```
 
 ### Compile
