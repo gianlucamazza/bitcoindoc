@@ -22,9 +22,17 @@ sudo make install
 
 ## Configure and run Tor
 Add the following lines to the end of tor configuration file: /etc/tor/torrc 
+Generate a new password for Tor access control daemon:
+```
+("satoshinakamoto" will be used as tor password in bitcoin.conf)
+$ tor --hash-password satoshinakamoto
+
+16:1C259D8CEE9E4DBE605C12B0893B8D784B6100AF3D389624513DC4D376
+```
+
 ```
 ControlPort 9051
-CookieAuthentication 1
+HashedControlPassword 16:1C259D8CEE9E4DBE605C12B0893B8D784B6100AF3D389624513DC4D376
 
 HiddenServiceDir /var/lib/tor/bitcoin-service/
 HiddenServicePort 8333 127.0.0.1:8333
@@ -71,6 +79,7 @@ Edit the Bitcoin configuration file (default path: .bitcoin/bitcoin.conf) and ad
 
 ```
 proxy=127.0.0.1:9050
+torpassword=satoshinakamoto
 listen=1
 txindex=1
 ```
