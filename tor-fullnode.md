@@ -79,3 +79,15 @@ Start Bitcoind
 ```
 bitcoind -daemon
 ```
+
+Check Bitcoin network info
+```
+bitcoin-cli getnetworkinfo
+{
+      "name": "onion",
+      "limited": false,
+      "reachable": true,
+      "proxy": "127.0.0.1:9050",
+      "proxy_randomize_credentials": true
+}
+```
