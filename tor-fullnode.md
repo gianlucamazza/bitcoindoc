@@ -23,6 +23,9 @@ sudo make install
 ## Configure and run Tor
 Add the following lines to the end of tor configuration file: /etc/tor/torrc 
 ```
+ControlPort 9051
+CookieAuthentication 1
+
 HiddenServiceDir /var/lib/tor/bitcoin-service/
 HiddenServicePort 8333 127.0.0.1:8333
 HiddenServicePort 18333 127.0.0.1:18333
