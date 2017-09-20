@@ -1,5 +1,5 @@
 # Bitcoin core segwit example:
-###create 2 of 2 multisig address
+create 2 of 2 multisig address
 
 ```
 address 1: mmDjiCXo77cSRsS4SLXYi9NzARRezTsGrm
